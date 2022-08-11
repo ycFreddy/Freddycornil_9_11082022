@@ -47,6 +47,7 @@ describe('Given I am connected as an employee', () => {
         .map((a) => a.innerHTML)
       const antiChrono = (a, b) => (a < b ? 1 : -1)
       const datesSorted = [...dates].sort(antiChrono)
+      // modification
       expect(dates).not.toEqual(datesSorted)
     })
 
